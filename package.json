@@ -1,0 +1,18 @@
+{
+  "title": "Fallr.js",
+  "name": "fallr-js",
+  "version": "2.0.1",
+  "description": "Fancy modal box jQuery plugin",
+  "homepage": "https://github.com/faisalman/fallr-js",
+  "main": "jquery-fallr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faisalman/fallr-js.git"
+  },
+  "keywords": ["modal", "jquery"],
+  "author": "Faisal Salman <f@faisalman.com>",
+  "license": "(GPL-2.0 OR MIT)"
+}
