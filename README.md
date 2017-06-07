@@ -15,7 +15,9 @@ Fancy modal box jQuery plugin
 <script type="text/javascript" src="jquery-fallr-2.0.min.js"></script>
 ```
 
-## General API
+## API
+
+### General
 
 ```js
 $.fallr.[method]([,options:Object] [,callback:function]);
@@ -23,65 +25,36 @@ $.fallr.[method]([,options:Object] [,callback:function]);
 
 ### Methods
 
-* show : create and show message box, for example:
-```js
-$.fallr.show({content: 'hello world!'}, function(){ console.log('message box appears'); });
-```
-
-* hide : hide current active message box, for example:
-```js
-$.fallr.hide(function(){ console.log('message box disappears'); });
-```
-
-* resize : resize the width/height of current active message box, for example:
-```js
-$.fallr.resize({width: '500px', height: '400px'});
-```
-
-* set : set default options that will be used for every message box instance in the page, for example:
-```js
-$.fallr.set({duration: 1000, useOverlay: true});
-```
-
-* blink : make the current active message box blinking
-```js
-$.fallr.blink();
-```
-
-* shake : make the current active message box shaking
-```js
-$.fallr.shake();
-```
+| method | description | example |
+| --- | --- | --- |
+| `show` | Create and show message box | `$.fallr.show({content: 'hello world!'}, function(){ console.log('message box appears'); });` |
+| `hide` | Hide current active message box | `$.fallr.hide(function(){ console.log('message box disappears'); });` |
+| `resize` | Resize width/height of current active message box | `$.fallr.resize({width: '500px', height: '400px'});` |
+| `set` | Set default options that will be used for every message box instance in the page | `$.fallr.set({duration: 1000, useOverlay: true});` |
+| `blink` | Make the current active message box blinking | `$.fallr.blink();` |
+| `shake` | Make the current active message box shaking | `$.fallr.shake();` |
 
 ### Options
 
-```js
-buttons         : {
-    button1 : {
-        text    : 'OK',                 // default button text
-        danger  : false,                // button color
-        onclick : function () {         // default button function 
-            $.fallr.hide(); 
-        }
-    }
-},
-icon            : 'check',          // [string] icon displayed
-content         : 'Hello',          // [string] fallr content
-position        : 'top',            // [string] top/center/bottom
-closeKey        : true,             // [bool] whether to close fallr with ESC key
-closeOverlay    : false,            // [bool] whether to close fallr on overlay click
-useOverlay      : true,             // [bool] whether overlay should be shown
-autoclose       : false,            // [int] autoclose duration in miliseconds, false to disable
-easingDuration  : 300,              // [int] animation duration
-easingIn        : 'swing',          // [string] easing type when appear
-easingOut       : 'swing',          // [string] easing type when disappear
-height          : 'auto',           // [string] css value for exact height
-width           : '360px',          // [string] css value for exact width
-zIndex          : 100,              // [int] set z-index
-bound           : window,           // [string/object] jQuery selector for costum boundary
-afterHide       : function () {},   // [function] after hide callback, can be overrided by parameter
-afterShow       : function () {}    // [function] after show callback, can be overrided by parameter
-```
+| option | type | default | description |
+| --- | --- | --- | --- |
+| `buttons` | `object` | `{ button1 : { text : 'OK', danger : false, onclick : function () { $.fallr.hide(); }}}` | Buttons |
+| `icon` | `string` | `"check"` | Icon |
+| `content` | `string` | `"Hello"` | Message box content |
+| `position` | `string` | `"top"` | Message box position, `top`/`center`/`bottom` |
+| `closeKey` | `bool` | `true` | Closable by `ESC` key |
+| `closeOverlay` | `bool` | `false` | Closable by overlay click |
+| `useOverlay` | `bool` | `true` | Show overlay outside message box |
+| `autoclose` | `bool` | `false` | Duration until message box close in miliseconds, `false` to disable |
+| `easingDuration` | `int` | `300` | Duration for animation |
+| `easingIn` | `string` | `"swing"` | Type of easing when appear |
+| `easingOut` | `string` | `"swing"` | Type of easing when disappear |
+| `height` | `string` | `"auto"` | CSS value for exact height |
+| `width` | `string` | `"360px"` | CSS value for exact width |
+| `zIndex` | `int` | `100` | Set `z-index` for message box |
+| `bound` | `string`/`object` | `window` | jQuery selector for custom boundary |
+| `afterHide` | `function` | `function () {}` | after hide callback |
+| `afterShow` | `function` | `function () {}` | after show callback |
 
 ### Custom Icon
 
