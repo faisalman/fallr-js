@@ -3,17 +3,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Fallr.js - Simple & Elegant Modal Box jQuery Plugin</title>	
+	<title>Fallr.js - Fancy, simple, yet elegant modal box jQuery plugin</title>	
     <meta name="description" content="fallr" />	
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="960gs.css" />
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" />
-	<link rel="stylesheet" type="text/css" media="screen,projection" href="https://rawgit.com/faisalman/fallr-js/master/css/jquery-fallr-2.0.1.css" />
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="https://rawgit.com/faisalman/fallr-js/master/src/css/jquery-fallr-2.0.1.css" />
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="github.css" />
 	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="highlight.pack.js"></script>
-	<script type="text/javascript" src="https://rawgit.com/faisalman/fallr-js/master/js/jquery-fallr-2.0.1.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/faisalman/fallr-js/master/src/js/jquery-fallr-2.0.1.js"></script>
 	<script type="text/javascript">
 	     //<![CDATA[
 
@@ -278,7 +278,9 @@
         hljs.initHighlightingOnLoad();        
 
 	    //]]>
-	</script>
+    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>
     
@@ -286,7 +288,12 @@
         <div class="grid_12">
             <div id="header">
                 <h1>Fallr.js</h1>
-                <h3>Simple & Elegant Modal Box jQuery Plugin</h3>
+                <h3>Fancy, simple, yet elegant modal box jQuery plugin</h3>
+                <h3>
+                    <a class="github-button" href="https://github.com/faisalman/fallr-js" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star faisalman/fallr-js on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/faisalman/fallr-js/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork faisalman/fallr-js on GitHub">Fork</a>
+                    <a class="github-button" href="https://github.com/faisalman/fallr-js/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download faisalman/fallr-js on GitHub">Download</a>
+                </h3>
             </div>
             <div class="clear"></div>
             <div id="slider"></div>
@@ -415,7 +422,7 @@ $.fallr.show({
                     <p><a href="#fallr-iframe" class="button">demo</a></p>
                     
                     <h4># Non-window boundary</h4>
-                    <pre class="code language-javascript" id="selector">$.fallr.show({
+                    <pre id="selector"><code class="javascript">$.fallr.show({
     content     : '&lt;p>Set the boundary to any element. To this box for example&lt;/p>',
     icon        : 'pin',
     bound       : '#selector',

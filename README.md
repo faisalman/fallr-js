@@ -1,6 +1,6 @@
 # Fallr.js
 
-Fancy modal box jQuery plugin
+Fancy, simple, yet elegant modal box jQuery plugin
 
 * Author    : Faisal Salman <<f@faisalman.com>>
 * Demo      : https://faisalman.github.io/fallr-js
@@ -10,13 +10,13 @@ Fancy modal box jQuery plugin
 
 ```html
 <!-- include the required CSS -->
-<link rel="stylesheet" type="text/css" href="jquery-fallr-2.0.css" />
+<link rel="stylesheet" type="text/css" href="jquery-fallr-2.0.1.css" />
                 
 <!-- include any version of jQuery before including plugin -->
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 
 <!-- include the plugin -->
-<script type="text/javascript" src="jquery-fallr-2.0.min.js"></script>
+<script type="text/javascript" src="jquery-fallr-2.0.1.min.js"></script>
 ```
 
 ## API
@@ -85,7 +85,7 @@ $.fallr.show({icon : 'twitter', content: '<p>Hi there, see my new icon!</p>'});
 
 ## License
 
-Dual licensed under GPLv2 & MIT
+Dual licensed under GPLv2 or MIT
 
 Copyright © 2011-2014 Faisal Salman <<f@faisalman.com>>
 

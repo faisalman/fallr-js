@@ -2,7 +2,7 @@ body {
     background: #f7f7f7;
     color: #555;
     cursor: default;
-    font-family: 'Bad Script', Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Kalam', Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
     font-size: 1em;
     -webkit-font-smoothing: antialiased;
 }
@@ -37,13 +37,12 @@ em {
 h1, h2, h3, h4, h5, h6 {
     color: #555;
     font-weight: normal;
-    font-family: 'Bad Script', Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-family: 'Kalam', Helvetica, "Lucida Grande", Arial, sans-serif;
     margin: 10px 0 0 0;
 }
 
 h1 {
     font-size: 7em;
-    margin-bottom: 40px;
 }
 
 h2 {
@@ -78,22 +77,24 @@ del {
     position: relative; 
     overflow: visible; 
     display: inline-block; 
-    padding: 0 15px 5px 15px;
+    padding: 5px 15px;
     border: 1px solid #d4d4d4; 
     margin-left: 10px;
     text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
     white-space: nowrap; 
     cursor: pointer;
-    background-color: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
-    background-image: -o-linear-gradient(#f4f4f4, #ececec);
-    background-image: linear-gradient(#f4f4f4, #ececec);
+    background-color: #3C8DDE;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     -o-background-clip: padding-box; 
-    border: 1px solid rgba(0, 0, 0, .25);
+    border-color: #3072b3;
+    border-bottom-color: #2a65a0;
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px; 
     border-radius: 3px;
@@ -101,17 +102,15 @@ del {
 
 .button:hover,
 .button:focus {
-    border-color: #3072b3;
-    border-bottom-color: #2a65a0;
-    text-decoration: none; 
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
-    color: #fff; 
+    border: 1px solid rgba(0, 0, 0, .25);
     cursor: default;
-    background-color: #3C8DDE;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
-    background-image: -moz-linear-gradient(#599bdc, #3072b3);
-    background-image: -o-linear-gradient(#599bdc, #3072b3);
-    background-image: linear-gradient(#599bdc, #3072b3);
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
 }
 
 fieldset { 
@@ -282,4 +281,101 @@ pre {
 }
 ol.linenums {
     padding-left: 15px !important;
+}
+
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #5c6370;
+    font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: #e06c75;
+}
+
+.hljs-literal {
+    color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+    color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: #61aeee;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
 }
