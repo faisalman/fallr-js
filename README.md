@@ -1,5 +1,7 @@
 # Fallr.js
 
+![fallr-img](https://rawgit.com/faisalman/fallr-js/master/docs/fallr-img.png)
+
 Fancy, simple, yet elegant modal box jQuery plugin
 
 * Author    : Faisal Salman <<f@faisalman.com>>
