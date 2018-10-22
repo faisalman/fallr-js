@@ -2,6 +2,10 @@
 
 Fancy modal box jQuery plugin
 
+* Author    : Faisal Salman <<f@faisalman.com>>
+* Demo      : https://faisalman.github.io/fallr-js
+* Source    : https://github.com/faisalman/fallr-js
+
 ## Usage
 
 ```html

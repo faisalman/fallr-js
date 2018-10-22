@@ -2,7 +2,7 @@ body {
     background: #f7f7f7;
     color: #555;
     cursor: default;
-    font-family: Schoolbell, Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Bad Script', Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
     font-size: 1em;
     -webkit-font-smoothing: antialiased;
 }
@@ -37,12 +37,13 @@ em {
 h1, h2, h3, h4, h5, h6 {
     color: #555;
     font-weight: normal;
-    font-family: Schoolbell, Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-family: 'Bad Script', Helvetica, "Lucida Grande", Arial, sans-serif;
     margin: 10px 0 0 0;
 }
 
 h1 {
     font-size: 7em;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -243,7 +244,7 @@ ul>li>a {
 }
 
 #header {
-    padding: 40px;
+    padding: 60px;
     color: #fff;
     background: #555;
 }
