@@ -7,6 +7,7 @@ Fancy, simple, yet elegant modal box jQuery plugin
 * Author    : Faisal Salman <<f@faisalman.com>>
 * Demo      : https://faisalman.github.io/fallr-js
 * Source    : https://github.com/faisalman/fallr-js
+* NPM       : https://www.npmjs.com/package/fallr-js
 
 ## Usage
 
