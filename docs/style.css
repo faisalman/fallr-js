@@ -1,8 +1,8 @@
 body {
-    background: #f7f7f7;
+    background: url('inflicted.png') #f7f7f7;
     color: #555;
     cursor: default;
-    font-family: 'Kalam', Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Lilita One', Helvetica, 'Lucida Grande', 'Trebuchet MS', Arial, sans-serif;
     font-size: 1em;
     -webkit-font-smoothing: antialiased;
 }
@@ -37,7 +37,7 @@ em {
 h1, h2, h3, h4, h5, h6 {
     color: #555;
     font-weight: normal;
-    font-family: 'Kalam', Helvetica, "Lucida Grande", Arial, sans-serif;
+    font-family: 'Lilita One', Helvetica, "Lucida Grande", Arial, sans-serif;
     margin: 10px 0 0 0;
 }
 
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -243,14 +243,18 @@ ul>li>a {
 }
 
 #header {
-    padding: 60px;
+    padding: 60px 40px 20px;
     color: #fff;
-    background: #555;
+    background: #282c34;
 }
 
 #header h1,
 #header h3 {
     color: #fff;
+}
+
+#header h3 {
+    margin: 20px 0;
 }
 
 #slider {
@@ -281,6 +285,9 @@ pre {
 }
 ol.linenums {
     padding-left: 15px !important;
+}
+code {
+    font-family: 'Space Mono', monospace;
 }
 
 /*
